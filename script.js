@@ -3,7 +3,7 @@ const nameInput = document.querySelector("#name");
 const messageInput = document.querySelector("#message");
 const result = document.querySelector("#form-result");
 
-button.addEventListener("click", () => {
+function handleSubmit() {
   const userName = nameInput.value.trim().toLowerCase();
   const message = messageInput.value.trim();
 
@@ -18,4 +18,5 @@ button.addEventListener("click", () => {
     nameInput.value = "";
     messageInput.value = "";
   }
-});
+}
+button.addEventListener("click", handleSubmit);
