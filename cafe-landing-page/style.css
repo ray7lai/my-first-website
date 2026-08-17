@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #2d211c;
+  background: #fffaf5;
+}
+
+.hero {
+  min-height: 430px;
+  padding: 80px 10%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(35, 22, 15, 0.55), rgba(35, 22, 15, 0.55)),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.brand {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  max-width: 650px;
+  margin: 16px 0;
+  font-size: 52px;
+}
+
+.hero p {
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+.hero a {
+  width: fit-content;
+  margin-top: 12px;
+  padding: 12px 18px;
+  background: #e6a15a;
+  color: #2d211c;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.menu {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 10%;
+}
+
+.menu h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.menu-item {
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(60, 40, 25, 0.08);
+}
+
+.menu-item h3 {
+  margin-top: 0;
+}
+
+.price {
+  color: #b86427;
+  font-weight: bold;
+}
+@media (max-width: 700px) {
+  .hero {
+    min-height: 380px;
+    padding: 60px 8%;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .menu {
+    padding: 50px 8%;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+}
+.visit {
+  padding: 70px 10%;
+  text-align: center;
+  background: #2d211c;
+  color: #fffaf5;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #e6a15a;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.visit h2 {
+  margin: 12px 0;
+  font-size: 34px;
+}
+
+.visit a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 18px;
+  background: #e6a15a;
+  color: #2d211c;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.hero a,
+.visit a,
+.menu-item {
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero a:hover,
+.visit a:hover {
+  background: #f0b66f;
+  transform: translateY(-2px);
+}
+
+.menu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(60, 40, 25, 0.14);
+}
